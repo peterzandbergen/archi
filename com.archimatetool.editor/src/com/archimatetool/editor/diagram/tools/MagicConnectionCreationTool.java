@@ -68,11 +68,6 @@ public class MagicConnectionCreationTool extends ConnectionCreationTool {
 
     
     /**
-     * Flags to update Factory elements when hovering on menu items
-     */
-    private boolean fArmOnElements, fArmOnConnections;
-
-    /**
      * This flag stops some thread conditions (on Mac) that can re-set the current command when the context menu is showing
      */
     private boolean fCanSetCurrentCommand = true;
@@ -152,8 +147,6 @@ public class MagicConnectionCreationTool extends ConnectionCreationTool {
     private boolean createConnection(CreateConnectionRequest request, IDiagramModelArchimateObject sourceDiagramModelObject,
             IDiagramModelArchimateObject targetDiagramModelObject) {
         
-        fArmOnConnections = false;
-        
         // Set this threading safety guard
         fCanSetCurrentCommand = false;
         
@@ -227,13 +220,9 @@ public class MagicConnectionCreationTool extends ConnectionCreationTool {
         
         Menu menu = new Menu(getCurrentViewer().getControl());
         if(elementsFirst) {
-            fArmOnElements = true;
-            fArmOnConnections = false;
             addElementActions(menu, sourceDiagramModelObject);
         }
         else {
-            fArmOnConnections = true;
-            fArmOnElements = false;
             addConnectionActions(menu, sourceDiagramModelObject);
         }
         menu.setVisible(true);
@@ -430,17 +419,16 @@ public class MagicConnectionCreationTool extends ConnectionCreationTool {
         item.setText(ArchimateLabelProvider.INSTANCE.getDefaultName(type));
         item.setImage(ArchimateLabelProvider.INSTANCE.getImage(type));
         
-        // Add hover listener to notify Hints View and also set element if elements first
+        // Add hover listener to notify Hints View and also set element
         item.addArmListener(new ArmListener() {
             @Override
             public void widgetArmed(ArmEvent e) {
-                if(fArmOnElements) {
-                    getFactory().setElementType(type);
-                }
+                getFactory().setElementType(type);
                 ComponentSelectionManager.INSTANCE.fireSelectionEvent(item, type);
             }
         });
         
+        // Not really needed, but just in case the arm listener fails
         item.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -476,17 +464,17 @@ public class MagicConnectionCreationTool extends ConnectionCreationTool {
         item.setText(ArchimateLabelProvider.INSTANCE.getRelationshipPhrase(relationshipType, reverseDirection));
         item.setImage(ArchimateLabelProvider.INSTANCE.getImage(relationshipType));
         
-        // Add hover listener to notify Hints View
+        // Add hover listener to notify Hints View and set relationship
         item.addArmListener(new ArmListener() {
             @Override
             public void widgetArmed(ArmEvent e) {
-                if(fArmOnConnections) {
-                    getFactory().setRelationshipType(relationshipType);
-                }
+                getFactory().setRelationshipType(relationshipType);
+                getFactory().setSwapSourceAndTarget(reverseDirection);
                 ComponentSelectionManager.INSTANCE.fireSelectionEvent(item, relationshipType);
             }
         });
         
+        // Not really needed, but just in case the arm listener failed
         item.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
