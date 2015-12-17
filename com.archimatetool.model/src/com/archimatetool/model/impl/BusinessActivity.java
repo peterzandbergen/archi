@@ -23,22 +23,22 @@ import com.archimatetool.model.IBusinessActivity;
  */
 public class BusinessActivity extends ArchimateElement implements IBusinessActivity {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected BusinessActivity() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.BUSINESS_ACTIVITY;
-    }
+		return IArchimatePackage.Literals.BUSINESS_ACTIVITY;
+	}
 
 } //BusinessActivity

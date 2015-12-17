@@ -377,4 +377,5 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SketchModelSticky" eSuperTypes="#//DiagramModelObject #//DiagramModelContainer #//TextContent #//Properties"/>
   <eClassifiers xsi:type="ecore:EClass" name="SketchModelActor" eSuperTypes="#//DiagramModelObject #//Documentable #//Properties"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Capability" eSuperTypes="#//BusinessLayerElement"/>
 </ecore:EPackage>

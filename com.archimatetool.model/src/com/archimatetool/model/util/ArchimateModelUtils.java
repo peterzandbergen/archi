@@ -193,6 +193,8 @@ public class ArchimateModelUtils {
      */
     public static EClass[] getBusinessClasses() {
         return new EClass[] {
+        		IArchimatePackage.eINSTANCE.getCapability(),
+        		
                 IArchimatePackage.eINSTANCE.getBusinessActor(),
                 IArchimatePackage.eINSTANCE.getBusinessRole(),
                 IArchimatePackage.eINSTANCE.getBusinessCollaboration(),

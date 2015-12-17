@@ -22,22 +22,22 @@ import com.archimatetool.model.IPrinciple;
  */
 public class Principle extends MotivationElement implements IPrinciple {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected Principle() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.PRINCIPLE;
-    }
+		return IArchimatePackage.Literals.PRINCIPLE;
+	}
 
 } //Principle

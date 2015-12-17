@@ -22,22 +22,22 @@ import com.archimatetool.model.IInfrastructureService;
  */
 public class InfrastructureService extends ArchimateElement implements IInfrastructureService {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected InfrastructureService() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.INFRASTRUCTURE_SERVICE;
-    }
+		return IArchimatePackage.Literals.INFRASTRUCTURE_SERVICE;
+	}
 
 } //InfrastructureService

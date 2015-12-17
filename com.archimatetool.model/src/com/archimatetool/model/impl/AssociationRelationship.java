@@ -22,22 +22,22 @@ import com.archimatetool.model.IAssociationRelationship;
  */
 public class AssociationRelationship extends Relationship implements IAssociationRelationship {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected AssociationRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.ASSOCIATION_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.ASSOCIATION_RELATIONSHIP;
+	}
 
 } //AssociationRelationship

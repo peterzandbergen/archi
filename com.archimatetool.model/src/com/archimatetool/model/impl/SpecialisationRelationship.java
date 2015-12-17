@@ -22,22 +22,22 @@ import com.archimatetool.model.ISpecialisationRelationship;
  */
 public class SpecialisationRelationship extends Relationship implements ISpecialisationRelationship {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SpecialisationRelationship() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.SPECIALISATION_RELATIONSHIP;
-    }
+		return IArchimatePackage.Literals.SPECIALISATION_RELATIONSHIP;
+	}
 
 } //SpecialisationRelationship

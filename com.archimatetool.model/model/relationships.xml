@@ -2,6 +2,14 @@
 <!-- ArchiMate relationship rules -->
 <relationships version="2.1">
 	<elements>
+	
+	<source element="Capability">
+		<target element="Capability" relations="cfgostu" />
+		<target element="BusinessActor" relations="cfgostu" />
+		<target element="BusinessRole" relations="fiotu" />
+		<target element="BusinessCollaboration" relations="fiotu" />
+	</source>
+	
 		<source element="BusinessActor">
 			<target element="BusinessActor" relations="cfgostu" />
 			<target element="BusinessRole" relations="fiotu" />

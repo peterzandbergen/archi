@@ -30,37 +30,37 @@ public interface ITextAlignment extends EObject {
     int TEXT_ALIGNMENT_RIGHT = 4;
     
     /**
-     * Returns the value of the '<em><b>Text Alignment</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Text Alignment</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Text Alignment</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Text Alignment</em>' attribute.
-     * @see #setTextAlignment(int)
-     * @see com.archimatetool.model.IArchimatePackage#getTextAlignment_TextAlignment()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Text Alignment</em>' attribute.
+	 * @see #setTextAlignment(int)
+	 * @see com.archimatetool.model.IArchimatePackage#getTextAlignment_TextAlignment()
+	 * @model
+	 * @generated
+	 */
     int getTextAlignment();
 
     /**
-     * Sets the value of the '{@link com.archimatetool.model.ITextAlignment#getTextAlignment <em>Text Alignment</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.archimatetool.model.ITextAlignment#getTextAlignment <em>Text Alignment</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Text Alignment</em>' attribute.
-     * @see #getTextAlignment()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Text Alignment</em>' attribute.
+	 * @see #getTextAlignment()
+	 * @generated
+	 */
     void setTextAlignment(int value);
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @model kind="operation"
-     * @generated
-     */
+	 * @model kind="operation"
+	 * @generated
+	 */
     int getDefaultTextAlignment();
 
 } // ITextAlignment

@@ -31,23 +31,23 @@ public abstract class ArchimateElement extends ArchimateComponent implements IAr
     private EList<IDiagramModelArchimateObject> diagramObjects;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ArchimateElement() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return IArchimatePackage.Literals.ARCHIMATE_ELEMENT;
-    }
+		return IArchimatePackage.Literals.ARCHIMATE_ELEMENT;
+	}
     
     /* (non-Javadoc)
      * @see com.archimatetool.model.IArchimateElement#getReferencingDiagramObjects()

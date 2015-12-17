@@ -24,18 +24,18 @@ package com.archimatetool.model;
  */
 public interface IArchimateModelElement extends IAdapter {
     /**
-     * Returns the value of the '<em><b>Archimate Model</b></em>' reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Archimate Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Archimate Model</em>' reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Archimate Model</em>' reference.
-     * @see com.archimatetool.model.IArchimatePackage#getArchimateModelElement_ArchimateModel()
-     * @model resolveProxies="false" transient="true" changeable="false" volatile="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Archimate Model</em>' reference.
+	 * @see com.archimatetool.model.IArchimatePackage#getArchimateModelElement_ArchimateModel()
+	 * @model resolveProxies="false" transient="true" changeable="false" volatile="true"
+	 * @generated
+	 */
     IArchimateModel getArchimateModel();
 
 } // IArchimateModelElement
